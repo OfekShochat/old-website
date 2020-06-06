@@ -96,6 +96,7 @@ form {
 }
 
 .form-control {
+    top: auto;
     width: 600px;
     background: transparent;
     border: none;
