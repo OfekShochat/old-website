@@ -74,6 +74,7 @@ color: #0088a9
 }
 
 button {
+right: 100px;
 margin-left: 20px;
 padding: 9px 25px;
 background-color: rgba(0, 136, 169, 1);
@@ -93,10 +94,11 @@ color: white;
 
 form {
     margin-top: 50px;
+    align-content: center;
 }
 
 .form-control {
-    top: 1000px;
+    top: 300px;
     width: 600px;
     background: transparent;
     border: none;
@@ -104,13 +106,15 @@ form {
     border-bottom: 1px solid gray;
     color: rgba(0, 136, 169, 0.8);
     font-size: 18px;
-    margin-bottom: 16px;
+    align-content: center;
+    right: 430px;
+    position: relative;
 }
 
 form .submit {
     background-color: #0088a9;
     border-color: transparent;
-    color: teal;
+    color: white;
     font-size: 20px;
     letter-spacing: 2px;
     height: 50px;
