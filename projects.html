@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+</head>
+
+<body>
+<header>
+    <img class="logo" src="./images/logo.png" alt="logo"></img>
+    <nav>
+        <ul class="nav_links">
+            <li><a href="index.html">home</a></li>
+            <li><a href="#">poopoo</a></li>
+            <li<a href="#"></a></li>
+        </ul>
+    </nav>
+    <a class="cta" href="contactme.html"><button>Contacts</button></a>
+</header>
+
+<center>
+<a href="./htmlprojects.html" class="imagefilter" id="html"></a>
+<a href="./pythonprojects.html" class="imagefilter" id="python"></a>
+</center>
+
+<script>
+    var html = document.getElementById("html")
+    var python = document.getElementById("python")
+    changeimg("./images/logo.png", html)
+    changeimg("./images/logo.png", python)
+
+</script>
