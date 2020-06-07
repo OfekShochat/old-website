@@ -17,11 +17,11 @@
     </nav>
     <a class="cta" href="contactme.html"><button>Contacts</button></a>
     <center>
-        <form action="contactme.php"> 
+        <form action="contactme.php" method="post"> 
             <input type="text" class="form-control" placeholder="name" required><br>
             <input type="text" class="form-control" placeholder="email" required><br>
             <textarea class="form-control" placeholder="your message" required></textarea><br>
-            <button type="submit" class="form-control submit" value="send">
+            <button type="submit" class="form-control submit" value="send">send</button>
         </form>
     </center>
 
