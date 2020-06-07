@@ -17,13 +17,58 @@
     </nav>
     <a class="cta" href="contactme.html"><button>Contacts</button></a>
     <center>
-        <form action="contactme.php" method="post"> 
-            <input type="text" class="form-control" placeholder="name" required><br>
-            <input type="text" class="form-control" placeholder="email" required><br>
-            <textarea class="form-control" placeholder="your message" required></textarea><br>
-            <button type="submit" class="form-control submit" name="submit">send</button>
+        <form> 
+            <input type="text" class="form-control" placeholder="name" id='name' required><br>
+            <input type="text" class="form-control" placeholder="email" id="email" required><br>
+            <textarea class="form-control" placeholder="your message" id="msg" required></textarea><br>
+            <button class="form-control submit" id="submitbtn" onclick="sendMessagemaybe()">send</button>
         </form>
     </center>
 
+    <script>
+        function sendMessagemaybe() {
+            var msg = document.getElementById("msg").value;
+            var email = document.getElementById("email").value;
+            var name = document.getElementById("name").value;
+
+            if  (msg!="") {
+                if (email!="" && email.includes("@") && email.includes(".")) {
+                    if (name!="") {
+                        sendMessage()
+                    }
+                }
+            }
+        }
+
+        function sendMessage() {
+          console.log(msg)
+          var msg = document.getElementById("msg").value;
+          var email = document.getElementById("email").value;
+          var name = document.getElementById("name").value;
+          var request = new XMLHttpRequest();
+          var content = name + ": sent you a message from " + email + ".\n" + msg + "\n"
+          console.log(content)
+          request.open("POST", "https://discord.com/api/webhooks/719183031541432380/N_JvkHjMU7evNfsEknW6J77c-JWF9yhzhadr6G-A_2Dtm-SFk9l8KM8TTZB-PQP84i_u");
+    
+          request.setRequestHeader('Content-type', 'application/json');
+          var params = {
+            name: "",
+            avatar_url: "",
+            content: content
+          }
+          request.send(JSON.stringify(params));
+        }
+        var submitButton = document.getElementById('submitbtn')
+            document.body.addEventListener( 'keyup', function (e) {
+            if ( e.keyCode == 13 ) {
+                triggerEvent( submitButton, 'click' );
+            }
+            });
+            function triggerEvent( elem, event ) {
+            var clickEvent = new Event( event );
+            elem.dispatchEvent( clickEvent );
+            }
+      </script>
+    
 </header>
 </body>
