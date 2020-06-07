@@ -3,10 +3,12 @@
 <html>
 <head>
     <link rel="stylesheet" href="styles.css">
+    <style>
+    </style>
 </head>
 <body>
 <header>
-    <img class="logo" src="./images/logo.png" alt="logo"></img>
+    <img id="up" class="logo" src="./images/logo.png" alt="logo"></img>
     <nav>
         <ul class="nav_links">
             <li><a href="#">kaki</a></li>
@@ -23,7 +25,27 @@
         <h1>poopoo</h1>
         <p>hi saar is a poop</p>
     </div>
+
+    
 </center>
+
+<a href="#up" title="back to top" id="myBtn">top</a>
+
+<script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+</script>
 
 </div>
 </html>
