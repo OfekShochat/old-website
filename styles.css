@@ -251,6 +251,7 @@ form .submit:hover {
 
 body { background-color: #111111; }
 .error404 {
+  top: 400px;
   padding: 40px;
   font-size: 75px;
   font-family: 'Monoton', cursive;
