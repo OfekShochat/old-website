@@ -249,7 +249,12 @@ form .submit:hover {
     background-size: 150px;
 }
 
+* {
+    background-color: #111111;
+}
+
 body { background-color: #111111; }
+
 .error404 {
   top: 425px;
   right: 920px;
