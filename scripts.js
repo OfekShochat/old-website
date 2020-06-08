@@ -60,9 +60,6 @@ function scrollFunction() {
     }
 }
 
-changeimg("./images/logo.png", html)
-changeimg("./images/logo.png", python)
-
 function changeimg(imgsource, object) {
     object.style.backgroundImage="url(" + imgsource + ")";
 }
