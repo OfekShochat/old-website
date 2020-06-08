@@ -251,7 +251,8 @@ form .submit:hover {
 
 body { background-color: #111111; }
 .error404 {
-  top: 400px;
+  top: 425px;
+  right: 920px;
   padding: 40px;
   font-size: 75px;
   font-family: 'Monoton', cursive;
@@ -259,6 +260,7 @@ body { background-color: #111111; }
   text-transform: uppercase;
   text-shadow: 0 0 80px red,0 0 30px FireBrick,0 0 6px DarkRed;
   color: red;
+  position: relative;
 }
 .error404 p { margin:0; }
 #error:hover { text-shadow: 0 0 200px #ffffff,0 0 80px #008000,0 0 6px #0000ff; }
