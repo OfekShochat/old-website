@@ -4,7 +4,7 @@ function sendMessagemaybe() {
     var name = document.getElementById("name").value;
 
     if  (msg!="") {
-        if (email!="" && email.includes("@") && email.includes(".")) {
+        if (email.includes("@") && email.includes(".")) {
             if (name!="") {
                 sendMessage()
             }
