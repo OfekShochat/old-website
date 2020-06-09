@@ -334,3 +334,30 @@ body { background-color: #111111; }
       opacity:0.4; text-shadow: none; 
     }
   }
+
+  .discord {
+    left: 10cm;
+    background-image: url('./images/discord.png');
+    background-size: 0.9cm;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    background-clip: border-box;
+    transition: background-size 0.2s;
+    transition-timing-function: cubic-bezier(.07,1.41,.82,1.41);
+    position: relative;
+
+    display: block;
+    width: 1.2cm;
+    height: 190px;
+    text-decoration: none;
+    cursor: pointer;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space:nowrap;
+}
+
+.discord:hover {
+    background-size: 1.2cm;
+    opacity: 80%;
+}
