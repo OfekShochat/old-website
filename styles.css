@@ -23,11 +23,6 @@ padding-bottom: 25%;
 100% {bottom: 20px;}
 }
 
-@keyframes btnscrollgoaway {
-    0% {bottom: 20px;}
-    100% {bottom: -100px;}
-}
-
 .btnscrollup {
     animation-name: popupanimation;
     animation-duration: 0.2s;
@@ -50,20 +45,24 @@ padding-bottom: 25%;
     background-color: rgba(255, 0, 0, 0.616);
 }
 
-@keyframes jump {
-    0% {bottom: 0px;}
-    25% {bottom: 20px;}
-    40% {bottom: 5px;}
-    45% {bottom: 0px;}
-    55% {bottom: 10px;}
-    70% {bottom: 15px;}
-    100% {bottom: 0px;}
-}
+@keyframes wiggle {
+  0% { transform: skewX(9deg); } 
+  10% { transform: skewX(-8deg); } 
+  20% { transform: skewX(7deg); } 
+  30% { transform: skewX(-6deg); } 
+  40% { transform: skewX(5deg); } 
+  50% { transform: skewX(-4deg); } 
+  60% { transform: skewX(3deg); } 
+  70% { transform: skewX(-2deg); } 
+  80% { transform: skewX(1deg); } 
+  90% { transform: skewX(0deg); } 
+  100% { transform: skewX(0deg); } 
+} 
 
 .titlewhitetext {
     color: white;
-    left: 700px;
-    top: 425px;
+    left: 18.6cm;
+    top: 7cm;
     position: relative;
     display:inline-block;
     font-family: 'Roboto', sans-serif;
@@ -71,36 +70,21 @@ padding-bottom: 25%;
 
 .titlewhitetext:hover {
     color: #0088a9;
-    animation-name: jump;
-    animation-duration: 3s;
-}
-
-.titlebluetxt {
-    color: rgb(73, 197, 187);;
-    position: relative;
-    display:inline-block;
-    left: 700px;
-    top: 425px;
-    font-family: 'Roboto', sans-serif;
-}
-
-.titlebluetxt:hover {
-    color: red;
+    animation-name: wiggle;
+    animation-duration: 1s;
 }
 
 .titleredtxt {
     color: red;
     position: relative;
+    left: 18.5cm;
+    top: 7cm;
     display:inline-block;
-    left: 700px;
-    top: 425px;
     font-family: 'Roboto', sans-serif;
 }
 
 .titleredtxt:hover {
     color: rgb(73, 197, 187);
-    animation-name: jump;
-    animation-duration: 3s;
 }
 
 .btnscroll {
@@ -111,10 +95,10 @@ outline: none;
 background-color: red;
 color: white;
 cursor: pointer; 
-padding: 15px; 
-border-radius: 10px; 
-font-size: 18px; 
-top: 400px;
+padding: 6mm; 
+border-radius: 3.4mm; 
+font-size: 4.8mm; 
+top: 5cm;
 }
 
 .btnscroll:hover {
@@ -131,7 +115,7 @@ background-color: #24252A;
 li, a, button {
 font-family: "Montserrat", sans-serif;
 font-weight: 500;
-font-size: 16px;
+font-size:  4.4mm;
 color: #edf0f1;
 text-decoration: none;
 }
@@ -140,7 +124,7 @@ header {
 display: flex;
 justify-content: flex-end;
 align-items: center;
-padding: 30px 10%;
+padding: 10mm 10%;
 }
 
 .logo {
@@ -154,7 +138,7 @@ list-style: none;
 
 .nav_links li {
 display: inline-block;
-padding: 0px 20px;
+padding: 0cm 5mm;
 }
 
 .nav_links li a {
@@ -185,21 +169,21 @@ color: white;
 }
 
 form {
-    margin-top: 50px;
+    margin-top: 1cm;
     align-content: center;
 }
 
 .form-control {
-    top: 300px;
-    width: 600px;
+    top: 9cm;
+    width: 15.3cm;
     background: transparent;
     border: none;
     outline: none;
-    border-bottom: 1px solid gray;
+    border-bottom: 0.3mm solid gray;
     color: rgba(0, 136, 169, 0.8);
-    font-size: 18px;
+    font-size: 5mm;
     align-content: center;
-    right: 430px;
+    right: 13.4cm;
     position: relative;
 }
 
@@ -207,10 +191,10 @@ form .submit {
     background-color: #0088a9;
     border-color: transparent;
     color: white;
-    font-size: 20px;
-    letter-spacing: 2px;
-    height: 50px;
-    margin-top: 20px;
+    font-size: 5.6mm;
+    letter-spacing: 0.2mm;
+    height: 1.4cm;
+    margin-top: 0.6cm;
     transition: 0.4s ease;
 }
 
@@ -230,7 +214,7 @@ form .submit:hover {
 
   .imagefilter {
     background-image: url('./images/searchicon.png');
-    background-size: 100px;
+    background-size: 3cm;
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 50%;
@@ -239,8 +223,8 @@ form .submit:hover {
     transition-timing-function: cubic-bezier(.07,1.41,.82,1.41);
 
     display: block;
-    width: 190px;
-    height: 190px;
+    width: 4cm;
+    height: 4cm;
     text-decoration: none;
     cursor: pointer;
     overflow: hidden;
@@ -249,7 +233,7 @@ form .submit:hover {
 }
 
 .imagefilter:hover {
-    background-size: 150px;
+    background-size: 3.6cm;
 }
 
 * {
@@ -259,10 +243,10 @@ form .submit:hover {
 body { background-color: #111111; }
 
 .error404 {
-  top: 425px;
-  right: 200px;
-  padding: 40px;
-  font-size: 75px;
+  top: 9cm;
+  right: 7cm;
+  padding: 8mm;
+  font-size: 2cm;
   font-family: 'Monoton', cursive;
   text-align: center;
   text-transform: uppercase;
@@ -306,10 +290,10 @@ body { background-color: #111111; }
 
 
 .smallerror404 {
-    top: 700px;
-    right: 740px;
-    padding: 40px;
-    font-size: 50px;
+    top: 15cm;
+    right: 16.2cm;
+    padding: 6mm;
+    font-size: 1.2cm;
     font-family: 'Monoton', cursive;
     text-align: center;
     text-transform: uppercase;
