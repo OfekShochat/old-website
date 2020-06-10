@@ -363,3 +363,34 @@ body { background-color: #111111; }
     background-size: 1.2cm;
     opacity: 80%;
 }
+
+pre, code {
+  font-family: monospace, monospace;
+}
+pre {
+  overflow: auto;
+}
+pre > code {
+  display: block;
+  padding: 1rem;
+  word-wrap: normal;
+}
+
+#editor {
+  height: 100%;
+  width: 50%;
+  display: inline-block;
+}
+
+#iframe {
+  height: 100%;
+  display: inline-block;
+  width: 50%;
+}
+
+#container {
+  height: 100%;
+  width: auto;
+  white-space: nowrap;
+  overflow: hidden;
+}

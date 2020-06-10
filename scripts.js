@@ -75,3 +75,4 @@ Object.defineProperty(String.prototype, 'hashCode', {
       return hash;
     }
   });
+  
