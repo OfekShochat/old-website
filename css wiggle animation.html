@@ -4,7 +4,17 @@
 <head>
     <style>
         html,body {
-            margin: 0; padding: 0; height: 100%;width: 100%; overflow: hidden;
+            zoom: 0.93;;margin: 0; padding: 0; height: 100%;width: 100%; overflow: hidden;
+        }
+        .whitewiggle {
+            position: relative;
+            color: white;
+        }
+
+        .whitewiggle:hover {
+            color: aqua;
+            animation-duration: 1s;
+            animation-name: wiggle;
         }
     </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,13 +39,14 @@
 </header>
 </body>
 
-<h1 class="whitetext">first, let's add a button that we want to wiggle!</h1>
+<h1 class="whitetext">first, let's add text that we want to wiggle!</h1>
 <div>
 <pre><code class="html">
 &lt;DOCTYPE html&gt;
 
 &lt;html&gt;
-&lt;button&gt;wiggle&lt;/button&gt;
+&lt;h1&gt;wiggley&lt;h1&gt;
+&lt;/html&gt;
 </code></pre>
 </div>
 
@@ -62,11 +73,17 @@
         }
 
         .wiggleBtn {
+            position: relative;
+        }
+
+        wiggleBtn:hover {
             animation-duration: 1s; /*you can change this*/
             animation-name: wiggle;
         }
     &lt;/style&gt;
 
-&lt;button class="wiggleBtn"&gt;wiggle&lt;/button&gt;
 </code></pre>
 </div>
+
+<H1 class="whitetext">and this is the output:</H1>
+<h1 class="whitewiggle">wiggle</h1>

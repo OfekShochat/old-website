@@ -394,3 +394,7 @@ pre > code {
   white-space: nowrap;
   overflow: hidden;
 }
+
+.nothing {
+  position: relative;  
+}
