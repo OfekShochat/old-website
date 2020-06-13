@@ -33,11 +33,18 @@
       <h1 class="whitetext">about me</h1>
     </div>
 
-    
+    <div class="overlay">
+      <div class="loader"></div>
+    </div>
 </center>
 
 
 <script>
+var overlay = document.getElementById("overlay")
+window.addEventListener("load", function() {
+    overlay.style.display = "None";
+})
+
 var mybutton = document.getElementById("myBtn");
 
 // When the user scrolls down 20px from the top of the document, show the button

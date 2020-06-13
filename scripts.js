@@ -75,4 +75,9 @@ Object.defineProperty(String.prototype, 'hashCode', {
       return hash;
     }
   });
-  
+
+function loader() {
+    window.addEventListener("load", function() {
+        overlay.style.display = "None";
+    })
+}

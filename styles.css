@@ -398,3 +398,24 @@ pre > code {
 .nothing {
   position: relative;  
 }
+
+.myloader {
+  width: 3%;
+  height: 3%;
+
+  position: absolute;
+  background-image: url("./images/loader.png");
+  animation: spin 3s infinite;
+}
+
+@keyframes spin {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
+
+#overlay {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 9999;
+}
