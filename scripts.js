@@ -76,8 +76,3 @@ Object.defineProperty(String.prototype, 'hashCode', {
     }
   });
 
-function loader() {
-    window.addEventListener("load", function() {
-        overlay.style.display = "None";
-    })
-}
